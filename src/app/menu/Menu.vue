@@ -23,7 +23,7 @@
                 menuList:[
                     {
                         name: '页头',
-                        link: '/foo',
+                        link: '/head',
                         child: [
                             {
                                 name:'logo',link:'test'
@@ -38,7 +38,7 @@
                     },
                     {
                         name: '页脚',
-                        link: '/bar',
+                        link: '/footer',
                         child: [
                             {
                                 name:'test',link:'test'
@@ -61,11 +61,14 @@
 <style>
     .menu-body{
         display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
         background-color: #4b4e57;
     }
     .body-container{
         display: flex;
         align-items: stretch;
+        width: 100%;
     }
     .menu-body a{
         text-decoration: none;
@@ -84,7 +87,7 @@
         color: #AEB7C2;
         padding: 10px 20px 10px 20px;
         cursor: pointer;
-        font-size: 2em;
+        font-size: 2rem;
         border-left: 4px solid #4b4e57;
         text-decoration: none;
     }
@@ -92,29 +95,19 @@
         color: #AEB7C2;
         padding: 10px 20px 10px 20px;
         cursor: pointer;
-        font-size: 2em;
+        font-size: 2rem;
         text-decoration: none;
     }
     .menu-first .menu:hover{
         color: #FFFFFF;
     }
+    .content{
+        display: flex;
+        flex-grow: 1;
+    }
     .active{
         color: #FFFFFF !important;
         background-color: black !important;
         border-left: 4px solid #4ab6da !important;
-    }
-    html{
-        height: 100%;
-        display: flex;
-        align-items: stretch;
-    }
-    body{
-        display: flex;
-        align-items: stretch;
-        margin: 0;
-        font-size: 62.5%;
-    }
-    .content{
-        padding: 40px;
     }
 </style>
