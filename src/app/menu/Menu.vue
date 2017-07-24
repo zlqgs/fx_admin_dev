@@ -23,27 +23,68 @@
                 menuList:[
                     {
                         name: '页头',
-                        link: '/foo',
+                        link: '/head',
+                        child: null
+                    },
+                    {
+                        name: '页脚',
+                        link: '/footer',
+                        child: null
+                    },
+                    {
+                        name: '菜单',
+                        link: '/nav',
+                        child: null
+                    },
+                    {
+                        name: '表格',
+                        link: '/cell',
                         child: [
                             {
-                                name:'logo',link:'test'
+                                name:'表格样式',
+                                child:[]
                             },
                             {
-                                name:'顶部导航',link:'test'
+                                name:'表格结构',
+                                child:[]
                             },
                             {
-                                name:'登录信息',link:'test'
+                                name:'表头类型',
+                                child:[
+                                    {
+                                        name:'单一表头',
+                                        href:null
+                                    },
+                                    {
+                                        name:'单一表头(带描述)',
+                                        href:null
+                                    },
+                                    {
+                                        name:'多层表头',
+                                        href:null
+                                    },
+                                    {
+                                        name:'尾表头',
+                                        href:null
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
-                        name: '页脚',
-                        link: '/bar',
-                        child: [
-                            {
-                                name:'test',link:'test'
-                            }
-                        ]
+                        name: '表单',
+                        link: '/form',
+                        child: null
+                    },
+                    {
+                        name: '搜索栏',
+                        link: '/search',
+                        child: null
+                    },
+                    {
+                        name: '弹窗',
+                        link: '/modal',
+                        child: null
                     }
                 ],
                 msg: 'Welcome to Your Vue.js App',
@@ -61,11 +102,14 @@
 <style>
     .menu-body{
         display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
         background-color: #4b4e57;
     }
     .body-container{
         display: flex;
         align-items: stretch;
+        width: 100%;
     }
     .menu-body a{
         text-decoration: none;
@@ -84,7 +128,7 @@
         color: #AEB7C2;
         padding: 10px 20px 10px 20px;
         cursor: pointer;
-        font-size: 2em;
+        font-size: 2rem;
         border-left: 4px solid #4b4e57;
         text-decoration: none;
     }
@@ -92,29 +136,19 @@
         color: #AEB7C2;
         padding: 10px 20px 10px 20px;
         cursor: pointer;
-        font-size: 2em;
+        font-size: 2rem;
         text-decoration: none;
     }
     .menu-first .menu:hover{
         color: #FFFFFF;
     }
+    .content{
+        display: flex;
+        flex-grow: 1;
+    }
     .active{
         color: #FFFFFF !important;
         background-color: black !important;
         border-left: 4px solid #4ab6da !important;
-    }
-    html{
-        height: 100%;
-        display: flex;
-        align-items: stretch;
-    }
-    body{
-        display: flex;
-        align-items: stretch;
-        margin: 0;
-        font-size: 62.5%;
-    }
-    .content{
-        padding: 40px;
     }
 </style>
