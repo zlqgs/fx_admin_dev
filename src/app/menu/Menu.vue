@@ -24,26 +24,67 @@
                     {
                         name: '页头',
                         link: '/head',
-                        child: [
-                            {
-                                name:'logo',link:'test'
-                            },
-                            {
-                                name:'顶部导航',link:'test'
-                            },
-                            {
-                                name:'登录信息',link:'test'
-                            }
-                        ]
+                        child: null
                     },
                     {
                         name: '页脚',
                         link: '/footer',
+                        child: null
+                    },
+                    {
+                        name: '菜单',
+                        link: '/nav',
+                        child: null
+                    },
+                    {
+                        name: '表格',
+                        link: '/cell',
                         child: [
                             {
-                                name:'test',link:'test'
+                                name:'表格样式',
+                                child:[]
+                            },
+                            {
+                                name:'表格结构',
+                                child:[]
+                            },
+                            {
+                                name:'表头类型',
+                                child:[
+                                    {
+                                        name:'单一表头',
+                                        href:null
+                                    },
+                                    {
+                                        name:'单一表头(带描述)',
+                                        href:null
+                                    },
+                                    {
+                                        name:'多层表头',
+                                        href:null
+                                    },
+                                    {
+                                        name:'尾表头',
+                                        href:null
+                                    }
+                                ]
                             }
                         ]
+                    },
+                    {
+                        name: '表单',
+                        link: '/form',
+                        child: null
+                    },
+                    {
+                        name: '搜索栏',
+                        link: '/search',
+                        child: null
+                    },
+                    {
+                        name: '弹窗',
+                        link: '/modal',
+                        child: null
                     }
                 ],
                 msg: 'Welcome to Your Vue.js App',
