@@ -24,17 +24,32 @@
                     {
                         name: '页头',
                         link: '/head',
-                        child: null
+                        child: [
+                            {
+                                name:'页头样式',
+                                child:[]
+                            }
+                        ]
                     },
                     {
                         name: '页脚',
                         link: '/footer',
-                        child: null
+                        child: [
+                            {
+                                name:'页脚样式',
+                                child:[]
+                            }
+                        ]
                     },
                     {
                         name: '菜单',
                         link: '/nav',
-                        child: null
+                        child: [
+                            {
+                                name:'菜单样式',
+                                child:[]
+                            }
+                        ]
                     },
                     {
                         name: '表格',
@@ -68,13 +83,90 @@
                                         href:null
                                     }
                                 ]
+                            },
+                            {
+                                name:'表格类型',
+                                child:[
+                                    {
+                                        name:'文字内容表格',
+                                        href:null
+                                    },
+                                    {
+                                        name:'文字内容表格(多行)',
+                                        href:null
+                                    },
+                                    {
+                                        name:'分割行',
+                                        href:null
+                                    },
+                                    {
+                                        name:'总计',
+                                        href:null
+                                    },
+                                    {
+                                        name:'响应文字',
+                                        href:null
+                                    },
+                                    {
+                                        name:'图片&文字',
+                                        href:null
+                                    },
+                                    {
+                                        name:'更多信息',
+                                        href:null
+                                    }
+                                ]
+                            },
+                            {
+                                name:'表格按钮',
+                                child:[
+                                    {
+                                        name:'横向按钮',
+                                        href:null
+                                    },
+                                    {
+                                        name:'纵向按钮',
+                                        href:null
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
                         name: '表单',
                         link: '/form',
-                        child: null
+                        child: [
+                            {
+                                name:'输入框',
+                                child:[]
+                            },
+                            {
+                                name:'选择型',
+                                child:[]
+                            },
+                            {
+                                name:'文件型',
+                                child:[]
+                            },
+                            {
+                                name:'其它',
+                                child:[]
+                            }
+                        ]
+                    },
+                    {
+                        name: '页面布局',
+                        link: '/search',
+                        child: [
+                            {
+                                name:'tab分页',
+                                child:[]
+                            },
+                            {
+                                name:'右边栏',
+                                child:[]
+                            }
+                        ]
                     },
                     {
                         name: '搜索栏',
@@ -105,6 +197,8 @@
         flex-grow: 0;
         flex-shrink: 0;
         background-color: #4b4e57;
+        position: fixed;
+        height: 100%;
     }
     .body-container{
         display: flex;
@@ -121,6 +215,7 @@
     .menu-second{
         padding-top: 20px;
         padding-bottom: 20px;
+        width: 200px;
         background-color: #FFF;
         box-shadow: 0 0 5px;
     }
@@ -145,6 +240,7 @@
     .content{
         display: flex;
         flex-grow: 1;
+        padding: 40px 40px 40px 344px;
     }
     .active{
         color: #FFFFFF !important;

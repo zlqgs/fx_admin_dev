@@ -460,7 +460,7 @@
                     <div class="list-tr">
                         <div class="td-10 height-100">
                             <div class="MobelNumber">18888888888</div>
-                            <div class="MoreInfo" style="margin-top: 0;">更多</div>
+                            <div class="MoreInfo">更多</div>
                         </div>
                         <div class="td-10 height-100">
                             <div class="contact-name">test1</div>
@@ -474,14 +474,30 @@
             <div v-highlight>
                 <pre>
                     <code>
-
+                        <div class="list-table">
+                            <div class="list-tr">
+                                <div class="td-10 height-100">
+                                    <div class="MobelNumber">18888888888</div>
+                                    <div class="MoreInfo">更多</div>
+                                </div>
+                                <div class="td-10 height-100">
+                                    <div class="contact-name">test1</div>
+                                    <div class="contact-name">test2</div>
+                                    <div class="MoreInfo" style="margin-top: 0;">更多</div>
+                                </div>
+                            </div>
+                        </div>
                     </code>
                 </pre>
             </div>
             <h6>表格说明</h6>
             <pre>
                 <p>
-
+                    .MoreInfo 更多信息按钮样式 (list.css)
+                    .contact-name 多行不竖直居中文字样式 (list.css)
+                    .MobelNumber 单行电话样式 (list.css)
+                    .td-10 10%横向比的表格(list.less)
+                    .height-100 100px定高表格(list.less)
                 </p>
             </pre>
         </blockquote>
@@ -489,38 +505,84 @@
         <h6><strong>横向按钮</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
-            <div class="banner-box"></div>
+            <div class="banner-box">
+                <div class="list-table">
+                    <div class="list-tr">
+                        <div class="td-30  height-100">
+                            <div class="button-center">
+                                <div class="button-tr"><input class="list-button" type="button" value="编辑"></div>
+                                <div class="button-tr"><input class="list-button" onclick="" type="button" value="下线"></div>
+                                <div class="button-tr"><input onclick="" class="list-button" type="button" value="删除"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h6>表格代码</h6>
             <div v-highlight>
                 <pre>
                     <code>
-
+                        <div class="list-table">
+                            <div class="list-tr">
+                                <div class="td-30  height-100">
+                                    <div class="button-center">
+                                        <div class="button-tr"><input class="list-button" type="button" value="编辑"></div>
+                                        <div class="button-tr"><input class="list-button" onclick="" type="button" value="下线"></div>
+                                        <div class="button-tr"><input onclick="" class="list-button" type="button" value="删除"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </code>
                 </pre>
             </div>
             <h6>表格说明</h6>
             <pre>
                 <p>
-
+                    .button-center 按键居中样式
+                    .button-tr 按键分割容器 33%
+                    .list-button 列表中按键样式
                 </p>
             </pre>
         </blockquote>
         <h6><strong>纵向按钮</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
-            <div class="banner-box"></div>
+            <div class="banner-box">
+                <div class="list-table">
+                    <div class="list-tr">
+                        <div class="td-30  height-100">
+                            <div class="button-center-three">
+                                <div class="button-tr-vertical"><input class="list-button" type="button" value="编辑"></div>
+                                <div class="button-tr-vertical"><input class="list-button" onclick="" type="button" value="下线"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h6>表格代码</h6>
             <div v-highlight>
                 <pre>
                     <code>
-
+                        <div class="list-table">
+                            <div class="list-tr">
+                                <div class="td-30  height-100">
+                                    <div class="button-center-three">
+                                        <div class="button-tr-vertical"><input class="list-button" type="button" value="编辑"></div>
+                                        <div class="button-tr-vertical"><input class="list-button" onclick="" type="button" value="下线"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </code>
                 </pre>
             </div>
             <h6>表格说明</h6>
             <pre>
                 <p>
-
+                    .button-center 纵向按键居中样式
+                    .button-tr-vertical 按键容器
+                    .list-button 列表中按键样式
                 </p>
             </pre>
         </blockquote>
