@@ -55,7 +55,7 @@
             </div>
         </div>
         <h4>表头类型</h4>
-        <h6><strong>单一表头</strong></h6>
+        <h6 id="single_head"><strong>单一表头</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -87,7 +87,7 @@
         </blockquote>
 
 
-        <h6><strong>单一表头(带描述)</strong></h6>
+        <h6 id="single_head_des"><strong>单一表头(带描述)</strong></h6>
         <blockquote>
             <strong>
                 <h6>表格样式</h6>
@@ -135,7 +135,7 @@
             </pre>
         </blockquote>
 
-        <h6><strong>多层表头</strong></h6>
+        <h6 id="multi_head"><strong>多层表头</strong></h6>
         <blockquote>
             <h6>表头样式</h6>
             <div class="banner-box">
@@ -178,7 +178,7 @@
                 </p>
             </pre>
         </blockquote>
-        <h6><strong>尾表头</strong></h6>
+        <h6 id="end_head"><strong>尾表头</strong></h6>
         <blockquote>
             <h6>表头样式</h6>
             <div class="banner-box">
@@ -209,7 +209,7 @@
             </pre>
         </blockquote>
         <h4>表格类型</h4>
-        <h6><strong>文字内容表格</strong></h6>
+        <h6 id="word_cell"><strong>文字内容表格</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -241,7 +241,7 @@
             </pre>
         </blockquote>
 
-        <h6><strong>文字内容表格(多行)</strong></h6>
+        <h6 id="multi_word_cell"><strong>文字内容表格(多行)</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -282,7 +282,7 @@
             </pre>
         </blockquote>
 
-        <h6><strong>分割行</strong></h6>
+        <h6 id="clip_line"><strong>分割行</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -316,7 +316,7 @@
                 </p>
             </pre>
         </blockquote>
-        <h6><strong>总计</strong></h6>
+        <h6 id="total"><strong>总计</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -349,7 +349,7 @@
                 </p>
             </pre>
         </blockquote>
-        <h6><strong>响应文字</strong></h6>
+        <h6 id="active_word"><strong>响应文字</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -381,7 +381,7 @@
                 </p>
             </pre>
         </blockquote>
-        <h6><strong>图片&文字</strong></h6>
+        <h6 id="word_pic"><strong>图片&文字</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -452,7 +452,7 @@
                 </p>
             </pre>
         </blockquote>
-        <h6><strong>更多信息</strong></h6>
+        <h6 id="more_info"><strong>更多信息</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -502,7 +502,7 @@
             </pre>
         </blockquote>
         <h4>表格按钮</h4>
-        <h6><strong>横向按钮</strong></h6>
+        <h6 id="button_inline"><strong>横向按钮</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
@@ -545,7 +545,7 @@
                 </p>
             </pre>
         </blockquote>
-        <h6><strong>纵向按钮</strong></h6>
+        <h6 id="button_upright"><strong>纵向按钮</strong></h6>
         <blockquote>
             <h6>表格样式</h6>
             <div class="banner-box">
