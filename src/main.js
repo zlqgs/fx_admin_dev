@@ -6,6 +6,9 @@ import head from './app/head/head.vue'
 import Footer from './app/footer/footer.vue';
 import nav from './app/nav/nav.vue';
 import cell from './app/cell/cell.vue';
+import layout from './app/layout/layout.vue';
+import search from './app/search/search.vue';
+import modal from './app/modal/modal.vue';
 import hljs from 'highlight.js'
 import 'highlight.js/styles/railscasts.css' //样式文件
 
@@ -35,7 +38,10 @@ const routes = [
     { path: '/footer', component: Footer },
     { path: '/nav', component: nav },
     { path: '/cell', component: cell },
-    { path: '/form', component: Form }
+    { path: '/form', component: Form },
+    { path: '/layout', component: layout },
+    { path: '/search', component: search },
+    { path: '/modal', component: modal }
 ];
 const router = new VueRouter({
     routes // （缩写）相当于 routes: routes
