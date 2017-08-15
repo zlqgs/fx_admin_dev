@@ -6,7 +6,7 @@
                     <div class="menu" @click="menu_action(index)" :class="{active:(active==index)}">{{ menu.name }}</div>
                 </router-link>
             </div>
-            <div class="menu-second" data-spy="affix">
+            <div class="menu-second"">
                 <template v-for="item in menuList[active].child">
                     <div class="menu">{{item.name}}</div>
                     <div class="menu-a" v-for="a in item.child" @click="turn_to(a.href)">{{a.name}}</div>
@@ -226,22 +226,62 @@
                     },
                     {
                         name: '页面布局',
-                        link: '/search',
+                        link: '/layout',
                         child: [
                             {
-                                name:'tab分页',
-                                child:[]
+                                name:'基础结构',
+                                child:[
+                                    {
+                                        name:'水平活动居中',
+                                        href:'#auto_center'
+                                    },
+                                    {
+                                        name:'编辑标题',
+                                        href:'#edit_title'
+                                    },
+                                    {
+                                        name:'tab分页',
+                                        href:'#tab'
+                                    }
+                                ]
                             },
                             {
                                 name:'右边栏',
-                                child:[]
+                                child:[
+                                    {
+                                        name:'右边栏',
+                                        href:'#right_bar'
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
                         name: '搜索栏',
                         link: '/search',
-                        child: null
+                        child: [
+                            {
+                                name:'基础样式',
+                                child:[
+                                    {
+                                        name:'下拉控件',
+                                        href:"#select"
+                                    },
+                                    {
+                                        name:'搜索组',
+                                        href:"#search_group"
+                                    },
+                                    {
+                                        name:'联动下拉控件',
+                                        href:"#multi_select"
+                                    },
+                                    {
+                                        name:'搜索信息栏',
+                                        href:"#find"
+                                    }
+                                ]
+                            }
+                        ]
                     },
                     {
                         name: '弹窗',
